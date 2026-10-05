@@ -2,4 +2,4 @@
 
 ## ER図
 
-![ER図](./diet-diagram.png)
+![ER図](./diet-drawio.png)
