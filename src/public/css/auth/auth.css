@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: serif;
+}
+
+/* 画面全体 */
+.auth {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #e8dcff, #ffd9ed, #ffc9b8);
+
+}
+
+/* カード部分 */
+.auth__container {
+    width: 420px;
+
+    padding: 25px 40px 30px;
+    background-color: #fff;
+    border-radius: 14px;
+    text-align: center;
+}
+
+/* logo部分 */
+.auth__logo {
+    margin: 0 0 5px;
+    color: #e9a2dd;
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+

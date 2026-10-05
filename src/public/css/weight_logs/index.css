@@ -1,0 +1,183 @@
+/*体重管理*/
+.weight-log {
+    width: 90%;
+    max-width: 1100px;
+    margin: 45px auto 60px;
+}
+
+/*体重サマリー*/
+.weight-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 45px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.weight-summary__item {
+    padding: 25px 30px;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+
+.weight-summary__item:last-child {
+    border-right: none;
+}
+
+.weight-summary__label {
+    margin: 0 0 12px;
+    color: #888;
+    font-size: 13px;
+}
+
+.weight-summary__value {
+    margin: 0;
+    color: #555;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.weight-summary__value span {
+    margin-left: 3px;
+    font-size: 14px;
+}
+
+/*検索・データ追加*/
+.weight-data__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-form__dates {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-form__dates input {
+    width: 150px;
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #666;
+    font-size: 12px;
+}
+
+.search-form__dates span {
+    color: #888;
+}
+
+.search-button {
+    width: 70px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #aaa7e7, #f29bd3);
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;   
+}
+
+.search-button:hover {
+    opacity: 0.8;
+}
+
+.add-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 38px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #aaa7e7, #f29bd3);
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.add-button:hover {
+    opacity: 0.8;
+}
+
+/*体重一覧*/
+.weight-table {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.weight-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.weight-table th {
+    padding: 16px 20px;
+    background-color: #fafafa;
+    color: #777;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.weight-table td {
+    padding: 16px 20px;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 13px;
+}
+
+.weight-table tbody tr {
+    transition: background-color 0.2s;
+}
+
+.weight-table tbody tr:hover {
+    background-color: #fff7fd;
+}
+
+.weight-table tbody td:hover {
+    background-color: #fff7fd;
+}
+
+/*鉛筆アイコン*/
+.edit-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #d89bd9;
+    font-size: 15px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.edit-icon:hover {
+    opacity: 0.6;
+}
+
+/*データがない場合*/
+.no-data {
+    padding: 40px !important;
+    color: #aaa;
+    text-align: center;
+}
+
+/*ページネーション*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+

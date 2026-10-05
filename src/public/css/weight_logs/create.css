@@ -1,0 +1,210 @@
+.weight-create {
+    width: 90%;
+    max-width: 700px;
+    margin: 45px auto 60px;
+    padding: 35px 40px 45px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/*タイトル*/
+.weight-create__title {
+    margin: 0 0 30px;
+    color: #555;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/*フォーム*/
+.weight-form {
+    width: 100%;
+}
+
+/*各入力項目*/
+.weight-form__group {
+    margin-bottom: 25px;
+}
+
+.weight-form__group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 13px;
+}
+
+/*必須*/
+.required {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: #f47c8a;
+    color: #fff;
+    font-size: 10px;
+}
+
+/*入力欄*/
+.weight-form__group input[type="date"],
+.weight-form__group input[type="text"],
+.weight-form__group input[type="time"] {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #666;
+    font-size: 13px;
+    outline: none;
+}
+
+.weight-form__group input:focus,
+.weight-form__group textarea:focus {
+    border-color: #c9a7dc;
+}
+
+.input-with-unit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-with-unit input {
+    flex: 1;
+}
+
+.input-with-unit span {
+    color: #666;
+    font-size: 13px;
+}
+
+/*運動内容*/
+.weight-form__group textarea {
+    width: 100%;
+    min-height: 130px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #666;
+    font-size: 13px;
+    resize: vertical;
+    outline: none;
+}
+
+/*placeholder*/
+.weight-form__group input::placeholder,
+.weight-form__group textarea::placeholder {
+    color: #ccc;
+}
+
+/*ボタン*/
+.weight-form__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+/*戻るボタン*/
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/*登録ボタン*/
+.submit-button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #aaa7e7, #f29bd3);
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.back-button:hover,
+.submit-button:hover {
+    opacity: 0.8;
+}
+
+/*モーダル*/
+.modal-toggle {
+    display: none !important;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+}
+
+/*モーダル表示*/
+.modal-toggle:checked + .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*背景*/
+.modal__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*モーダル本体*/
+.modal__content {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 650px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 35px 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); 
+}
+
+/*タイトル*/
+.modal__title {
+    margin: 0 0 30px;
+    color: #555;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/*閉じるボタン*/
+.modal__close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    border: none;
+    background: none;
+    color: #999;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.modal__close:hover {
+    color: #555;
+}
+
+.form-error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+}

@@ -1,0 +1,120 @@
+.goal-setting {
+    min-height: calc(100vh - 50px);
+    padding: 170px 0 60px;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+.goal-setting__container {
+    width: 260px;
+    margin: 0 auto;
+    padding: 22px 12px 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   タイトル
+========================= */
+
+.goal-setting__title {
+    margin: 0 0 28px;
+    color: #333;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* =========================
+   入力欄
+========================= */
+
+.form-group {
+    margin-bottom: 27px;
+}
+
+.goal-weight-input {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.goal-weight-input input {
+    flex: 1;
+    width: 100%;
+    height: 25px;
+    padding: 0 7px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    color: #555;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+.goal-weight-input input:focus {
+    outline: none;
+    border-color: #aaa;
+}
+
+.goal-weight-input span {
+    color: #555;
+    font-size: 10px;
+}
+
+
+/* =========================
+   エラー
+========================= */
+
+.form-error {
+    margin-top: 5px;
+    color: #ff0000;
+    font-size: 11px;
+}
+
+
+/* =========================
+   ボタン
+========================= */
+
+.goal-setting__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.goal-setting__back,
+.goal-setting__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 112px;
+    height: 27px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.goal-setting__back {
+    background-color: #ddd;
+    color: #555;
+}
+
+.goal-setting__button {
+    background: linear-gradient(
+        90deg,
+        #aaa7e7,
+        #f29bd3
+    );
+    color: #fff;
+}
+
+.goal-setting__back:hover,
+.goal-setting__button:hover {
+    opacity: 0.8;
+}
